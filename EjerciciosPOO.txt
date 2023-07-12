@@ -1,0 +1,314 @@
+//ejercicio 1
+
+public class CuboDeUnNumero{
+
+
+public static void main(String[] args) {
+Scanner Sca = new Scanner (System.in);
+
+System.out.print("Programa que calcule el cubo de un numero\n \n");
+
+System.out.print("Ingrese el primer numero");
+int cubo = Sca.nextInt();
+
+int Resultado = cubo * cubo * cubo;
+System.out.print("El numero elevado al cubo es: " + Resultado);
+
+}
+
+}
+
+//ejercicio 2
+
+import java.util.Scanner;
+
+public class LeerDatosPersonales {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        // Leer el nombre
+        System.out.print("Por favor, ingrese su nombre: ");
+        String nombre = sc.nextLine();
+
+        // Leer el sexo
+        System.out.print("Por favor, ingrese su sexo (M/F): ");
+        char sexo = sc.nextLine().charAt(0);
+
+        // Leer la edad
+        System.out.print("Por favor, ingrese su edad: ");
+        int edad = sc.nextInt();
+
+        // Mostrar los datos ingresados
+        System.out.println("Su nombre es " + nombre);
+        System.out.println("Su sexo es " + sexo);
+        System.out.println("Su edad es " + edad);
+        
+        sc.close();
+    }
+}
+
+//ejercicio 3
+
+public class NumPositivo {
+    Scanner scanner = new Scanner(System.in);
+        System.out.println("ingrese el primer numero");
+        int n1=scanner.nextInt();
+        System.out.println("ingrese el segundo numero");
+        int n2=scanner.nextInt();
+        System.out.println("ingrese el tercer numero");
+        int n3=scanner.nextInt();
+        System.out.println("ingrese el cuarto numero");
+        int n4=scanner.nextInt();
+        System.out.println("ingrese el quinto numero");
+        int n5=scanner.nextInt();
+        
+        int numeros[] =new int[5];
+        
+        numeros[0]=n1;
+        numeros[1]=n2;
+        numeros[2]=n3;
+        numeros[3]=n4;
+        numeros[4]=n5;
+        
+        for(int i = 0; i<5;i++){
+            if(numeros[i]>0){
+                System.out.println("\n"+numeros[i]);
+                
+            }
+        }
+}
+
+//ejercicio 4
+        System.out.println("ingrese el primer numero");
+        int n1=scanner.nextInt();
+        System.out.println("ingrese el segundo numero");
+        int n2=scanner.nextInt();
+        System.out.println("ingrese el tercer numero");
+        int n3=scanner.nextInt();
+        System.out.println("ingrese el cuarto numero");
+        int n4=scanner.nextInt();
+        System.out.println("ingrese el quinto numero");
+        int n5=scanner.nextInt();
+        
+        int numeros[] =new int[5];
+        
+        numeros[0]=n1;
+        numeros[1]=n2;
+        numeros[2]=n3;
+        numeros[3]=n4;
+        numeros[4]=n5;
+        
+        for(int i = 0;i<5;i++){
+            if(numeros[i]<0){
+                System.out.println("\n"+numeros[i]);
+            }
+        }
+
+//ejercicio 5
+
+public class Promedio {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("ingrese el primer numero");
+    int n1=scanner.nextInt();
+    System.out.println("ingrese el segundo numero");
+    int n2=scanner.nextInt();
+    System.out.println("ingrese el tercer numero");
+    int n3=scanner.nextInt();
+    System.out.println("ingrese el cuarto numero");
+    int n4=scanner.nextInt();
+    System.out.println("ingrese el quinto numero");
+    int n5=scanner.nextInt();
+    System.out.println("ingrese el sexto numero");
+    int n6=scanner.nextInt();
+    System.out.println("ingrese el septimo numero");
+    int n7=scanner.nextInt();
+
+    double promedio = (n1+n2+n3+n4+n5+n6+n7)/ 7.0;
+    System.out.println("el promedio es: "+ promedio);
+}
+
+//ejercicio 6
+
+public class NumNegativo {
+    Scanner scanner = new Scanner (System.in);
+    int numero = 0;
+    numero = scanner.nextInt();
+
+    int pos = 0;
+    pos = numero * -1;
+    for(int i = 0; i<1;i++){
+        
+    System.out.println ( "el numero ingresado es: " + numero " su positivo es: " + pos);
+    
+}
+}
+
+//ejercicio 7
+       String nombre;
+       int  salarioh = 5000;
+       int salario;
+       System.out.println("ingrese su ID");
+       int n=scanner.nextInt();
+       System.out.println("ingrese sus horas laboradas");
+       int horast=scanner.nextInt();
+       
+       switch(n){
+        case 1035: 
+            nombre = "maria vergara";
+             salario= salarioh*horast;
+             if(salario==4000){
+             System.out.println(nombre+" de acuerdo a sus horas laboradas: "+horast+" y teniendo en cuenta que su salario por hora es de: "+salarioh+" pesos. Su salario es de: "+salario+" pesos");
+             }
+        break;
+        
+        case 6688: 
+            nombre = "camila flor";
+             salario= salarioh*horast;
+             if(salario==400000){
+             System.out.println(nombre+" de acuerdo a sus horas laboradas: "+horast+" y teniendo en cuenta que su salario por hora es de: "+salarioh+" pesos. Su salario es de: "+salario+" pesos");
+             }
+        break;
+        case 4167: 
+            nombre = "angie balanta";
+             salario= salarioh*horast;
+             if(salario==400000){
+             System.out.println(nombre+" de acuerdo a sus horas laboradas: "+horast+" y teniendo en cuenta que su salario por hora es de: "+salarioh+" pesos. Su salario es de: "+salario+" pesos");
+             }
+        break;
+        case 7884:
+            nombre = "tatiana perez";
+             salario= salarioh*horast;
+             if(salario==400000){
+             System.out.println(nombre+" de acuerdo a sus horas laboradas: "+horast+" y teniendo en cuenta que su salario por hora es de: "+salarioh+" pesos. Su salario es de: "+salario+" pesos");
+             }
+        break;
+        default: 
+            System.out.println("su ID no esta registrado");
+        break;
+        };
+
+//ejercicio 8
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese el primer número: ");
+        int num1 = scanner.nextInt();
+        System.out.println("Ingrese el segundo número: ");
+        int num2 = scanner.nextInt();
+        System.out.println("Ingrese el tercer número: ");
+        int num3 = scanner.nextInt();
+        scanner.close();
+
+        int middleNum = num1;
+        if ((num1 > num2 && num1 < num3) || (num1 < num2 && num1 > num3)) {
+            middleNum = num1;
+        } else if ((num2 > num1 && num2 < num3) || (num2 < num1 && num2 > num3)) {
+            middleNum = num2;
+        } else {
+            middleNum = num3;
+        }
+        System.out.println("El número medio es: " + middleNum);
+    }
+}
+
+
+//ejercicio 9
+
+public class OrdenNumeros {
+   
+    int a, b, c;
+   
+    Scanner entrada = new Scanner(System.in);
+   
+    public void ingresarnumeros() {
+        System.out.println("Por favor ingrese 3 numeros");
+        System.out.print("Ingrese numero 1: ");
+        a = entrada.nextInt();
+        System.out.print("Ingrese numero 2: ");
+        b = entrada.nextInt();
+        System.out.print("Ingrese numero 3: ");
+        c = entrada.nextInt();     
+    }
+   
+    public void ordenar() {
+        if(a>b) {
+            if(a>c) {
+                if(b>c) {
+                    System.out.println("Orden Ascendente: " + c + " " + b + " " + a);
+                                    
+                }else {
+                    System.out.println("Orden Ascendente: " + a + " " + c + " " + b);
+                    
+                }
+            }else {
+                System.out.println("Orden Ascendente: " + b + " " + a + " " + c);
+                
+            }
+        }else {
+            if(b>c) {
+                if(a>c) {
+                    System.out.println("Orden Ascendente: " + c + " " + a + " " + b);
+                    
+                }else {
+                    System.out.println("Orden Ascendente: " + a + " " + c + " " + b);
+                    
+                }              
+            }else {
+                System.out.println("Orden Ascendente: " + a + " " + b + " " + c);
+              
+            }
+        }
+    }
+ 
+    public static void main(String[] args) {
+        OrdenNumeros fc = new OrdenNumeros();
+        fc.ingresarnumeros();
+        fc.ordenar();
+    }
+ 
+
+}
+
+ //ejercicio 10
+       String nombre1;
+       int edad;
+       System.out.println("ingrese su ID");
+       int no=scanner.nextInt();
+       switch(n1){
+        case 1035: 
+            nombre1 = "maria vergara";
+            edad=18;
+             if(edad>=18){
+             System.out.println(nombre1+" usted tiene "+edad+" años. es mayor de edad");
+             }
+        break;
+        
+        case 6688: 
+            nombre1 = "camila flor";
+            edad=28;
+             if(edad>=18){
+             System.out.println(nombre1+" usted tiene "+edad+" años. es mayor de edad");
+             }
+        break;
+        case 4167: 
+            nombre1 = "angie balanta";
+            edad=17;
+             if(edad>=18){
+             System.out.println(nombre1+" usted tiene "+edad+" años. es mayor de edad");
+             }
+        break;
+        case 7884:
+            nombre1 = "tatiana perez";
+            edad=15;
+             if(edad>=18){
+             System.out.println(nombre1+" usted tiene "+edad+" años. es mayor de edad");
+             }
+        break;
+        default: 
+            System.out.println("su ID no esta registrado");
+        break;
+        }
