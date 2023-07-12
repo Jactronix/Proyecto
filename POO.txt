@@ -1,0 +1,100 @@
+public class Banco {
+    private int codigo;
+    private String nombre;
+    private String fecha;
+
+    public Banco(int codigo, String nombre, String fecha) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.fecha = fecha;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+}
+
+class Ahorro extends Banco {
+    private int numero;
+
+    public Ahorro(int codigo, String nombre, String fecha, int numero) {
+        super(codigo, nombre, fecha);
+        this.numero = numero;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+}
+
+class Corriente extends Banco {
+    private int numero;
+
+    public Corriente(int codigo, String nombre, String fecha, int numero) {
+        super(codigo, nombre, fecha);
+        this.numero = numero;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+}
+
+class Movimiento extends Banco {
+    private String fechaMovimiento;
+
+    public Movimiento(int codigo, String nombre, String fecha, String fechaMovimiento) {
+        super(codigo, nombre, fecha);
+        this.fechaMovimiento = fechaMovimiento;
+    }
+
+    public String getFechaMovimiento() {
+        return fechaMovimiento;
+    }
+
+    public void setFechaMovimiento(String fechaMovimiento) {
+        this.fechaMovimiento = fechaMovimiento;
+    }
+}
+
+// Ejemplo de uso
+public class Main {
+    public static void main(String[] args) {
+        Banco banco = new Banco(1, "Mi banco", "01/01/2022");
+        Ahorro ahorro = new Ahorro(2, "Mi cuenta de ahorro", "01/01/2022", 12345);
+        Corriente corriente = new Corriente(3, "Mi cuenta corriente", "01/01/2022", 67890);
+        Movimiento movimiento = new Movimiento(4, "Mi movimiento", "01/01/2022", "01/02/2022");
+
+        System.out.println(banco.getCodigo() + " " + banco.getNombre() + " " + banco.getFecha());
+        System.out.println(ahorro.getCodigo() + " " + ahorro.getNombre() + " " + ahorro.getFecha() + " " + ahorro.getNumero());
+        System.out.println(corriente.getCodigo() + " " + corriente.getNombre() + " " + corriente.getFecha() + " " + corriente.getNumero());
+        System.out.println(movimiento.getCodigo() + " " + movimiento.getNombre() + " " + movimiento.getFecha() + " " + movimiento.getFechaMovimiento());
+    }
